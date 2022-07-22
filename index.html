@@ -10,26 +10,15 @@
 
 <body>
         <script src="https://code.responsivevoice.org/responsivevoice.js?key=6AqfGK6s"></script>
-        <!-- replace with KEY-->
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
         <textarea id="text" cols="45" rows="20">
                 Descending from the Middle French preposition environ “around,” environment , in its most basic meaning, is “that which surrounds.” When preceded by the and unmodified, it usually refers to the natural world (“please don’t litter if you care about the environment”). In a less physical, more extended sense, it may signify the circumstances and conditions that make up everyday life (“He grew up in a loving environment.”) The word may also be applied in highly specialized ways, denoting, for example, “the position of a linguistic element” (“how g gets pronounced in Italian depends upon its phonetic environment”) or “a computer interface from which various tasks can be performed” (“the app works in varied environments").
         </textarea>
 
-        <!-- <select id="voiceselection"></select> -->
-
         <input onclick="responsiveVoice.speak($('#text').val(),$('#voiceselection').val());" type="button"
                 value="Read this for me" />
 
-        <!-- <script>
-                //voice selection dropdown
-                var voicelist = responsiveVoice.getVoices();
-                var vselect = $("#voiceselection");
-                $.each(voicelist, function () {
-                        vselect.append($("<option />").val(this.name).text(this.name));
-                });
-        </script> -->
 </body>
 
 </html>
